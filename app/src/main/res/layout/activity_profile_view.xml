@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileViewActivity">
+
+    <ImageView
+        android:id="@+id/pro_pic_big"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:transitionName="imageTransition"
+        app:srcCompat="@mipmap/propic" />
+
+    <TextView
+        android:id="@+id/txt_name_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pro_pic_big"
+        android:text="Sam Winchester"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:transitionName="nameTransition"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_desc_big"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:transitionName="descTransition"
+        android:text="Come, fight demons with me and my brother Dean.
+We are tortured souls. We are legion. We comply."
+        android:textAlignment="center" />
+
+
+</RelativeLayout>
